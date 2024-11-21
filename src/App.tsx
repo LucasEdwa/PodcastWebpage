@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
 import Home from './pages/Home';
 import { NavBar } from './components/navBar';
 import About from './pages/About';
