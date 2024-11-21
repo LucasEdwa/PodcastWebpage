@@ -1,4 +1,3 @@
-import { i } from 'framer-motion/client';
 import { useState } from 'react';
 
 export const NavBar = ({ onContactClick }: { onContactClick: () => void }) => {

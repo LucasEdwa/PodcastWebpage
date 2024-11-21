@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 
 const TikTokEmbed = ({ embedUrl }: { embedUrl: string }) => {
     useEffect(() => {

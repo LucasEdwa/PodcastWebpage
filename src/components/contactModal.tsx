@@ -1,6 +1,4 @@
-import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import ContactForm from './contactUs';
 import { IContactMethod } from '../models/IContactMethod';
 
 const contactMethods: IContactMethod[] = [

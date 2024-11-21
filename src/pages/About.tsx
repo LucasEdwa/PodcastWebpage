@@ -1,5 +1,4 @@
 import image from '../processed-189A72F1-E649-4F89-933A-D1EDA411A72D.jpeg';
-import { SocialIcon } from 'react-social-icons';
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ReactNode } from "react";
