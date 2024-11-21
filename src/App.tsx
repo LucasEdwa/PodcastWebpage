@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import { NavBar } from './components/navBar';
@@ -14,7 +14,7 @@ function App() {
   const handleCloseModal = () => setShowModal(false);
 
   return (
-    <>
+    <Router>
       <NavBar onContactClick={handleShowModal} />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
       </Routes>
       <Footer />
       <ContactModal show={showModal} handleClose={handleCloseModal} />
-    </>
+    </Router>
   );
 }
 
