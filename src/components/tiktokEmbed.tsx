@@ -9,12 +9,12 @@ const TikTokEmbed = ({ embedUrl }: { embedUrl: string }) => {
     }, []);
 
     return (
-        <div className='bg-gradient-to-r from-[#6A329F] via-[#9F6BB3] to-[#d9c5e6] p-32 flex'>
+        <div className='bg-custom-gradient transition-500'>
             <blockquote
                 className="tiktok-embed"
                 cite={embedUrl}
                 data-video-id={embedUrl.split('/').pop()}
-                style={{ maxWidth: '605px', minWidth: '325px' }}
+                style={{ maxWidth: '505px', minWidth: '325px' }}
             >
                 <section>
                     <a

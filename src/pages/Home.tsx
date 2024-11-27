@@ -1,5 +1,5 @@
 import { motion, useInView } from "framer-motion";
-import { useRef,ReactNode } from "react";
+import { useRef, ReactNode } from "react";
 import ContactForm from "../components/contactUs";
 import Hero from "../components/hero";
 import { Instagram } from "../components/instagram";
@@ -32,25 +32,30 @@ const MotionDiv = ({ children }: { children: ReactNode }) => {
 
 export default function Home() {
     return (
-        <div className="bg-gradient-to-r from-[#6A329F] via-[#9F6BB3] to-[#d9c5e6] transition duration-500  w-full scroll-smooth">
+        <div className="bg-gradient-to-r from-[#6A329F] via-[#9F6BB3] to-[#d9c5e6]  transition duration-500  w-full scroll-smooth">
             <MotionDiv>
                 <Hero />
             </MotionDiv>
+
+            <Episodes />
+
             <MotionDiv>
-                <Episodes />
+                <div className="p-2 lg:flex lg:justify-center">
+                    <Instagram />
+                </div>
             </MotionDiv>
             <MotionDiv>
-                <Instagram />
+                <div className="lg:flex lg:justify-center p-4">
+
+                    <Spotify />
+                </div>
             </MotionDiv>
             <MotionDiv>
-                <Spotify />
+                <div className=" lg:flex lg:justify-center">  <ContactForm /></div>
             </MotionDiv>
             <MotionDiv>
-                <ContactForm />
+                <TikTokEmbed embedUrl="https://www.tiktok.com/@economiaparatodas/video/7431169390130810144" />
             </MotionDiv>
-            <MotionDiv>
-            <TikTokEmbed embedUrl="https://www.tiktok.com/@economiaparatodas/video/7431169390130810144" />
-            </MotionDiv>    
         </div>
     );
 }

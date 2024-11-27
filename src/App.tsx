@@ -1,28 +1,24 @@
-import { useState } from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import { NavBar } from './components/navBar';
 import About from './pages/About';
+import { NavBar } from './components/navBar';
 import Footer from './components/footer';
-import ContactModal from './components/contactModal';
+import LanguageSwitcher from './LanguageSwitcher'; // Import the LanguageSwitcher component
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
 
-  const handleShowModal = () => setShowModal(true);
-  const handleCloseModal = () => setShowModal(false);
 
   return (
-    <Router>
-      <NavBar onContactClick={handleShowModal} />
+    <>
+      <NavBar  />
+      <LanguageSwitcher /> {/* Add the LanguageSwitcher component */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/dashboard" />
+        {/* Add other routes as necessary */}
       </Routes>
       <Footer />
-      <ContactModal show={showModal} handleClose={handleCloseModal} />
-    </Router>
+    </>
   );
 }
 
