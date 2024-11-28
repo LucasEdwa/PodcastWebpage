@@ -6,9 +6,13 @@ export default function Hero() {
 
     return (
         <>
-            <div className="text-white w-full h-[100dvh]">
-                <div className="flex justify-center gap-3">
-                    <img src={image} alt="Economia" className="w-[21rem] border-2 h-[21rem] p-2 mt-5 object-cover rounded-full" />
+            <div className="text-white w-full h-[100vh]">
+                <div className="relative flex justify-center gap-3 w-full">
+                    <div className="absolute w-[18rem] h-[22rem] rounded-full border-3 border-yellow-500 animate-spin-slow"></div>
+                    <div className="absolute w-[18rem] h-[22rem] rounded-full border-3 border-red-600/40 animate-spin-reverse"></div>
+                    <div className="absolute w-[18rem] h-[22rem] rounded-full border-3 border-purple-600/50 animate-spin-fast"></div>
+
+                    <img src={image} alt="Economia" className="w-[21rem]  h-[21rem] p-2 mt-3 object-cover rounded-full" />
                 </div>
                 <div className="p-12">
                     <h1 className="text-4xl font-bold text-center" dangerouslySetInnerHTML={{ __html: t('hero_title') }}></h1>
