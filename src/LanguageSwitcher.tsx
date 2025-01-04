@@ -8,7 +8,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className='flex gap-2 p-1 w-full text-white items-center'>
+    <div className='flex gap-2 p-1 w-full text-black items-center bg-custom-gradient'>
       <div className="items-center py-1 mt-1">
         <h6 className='text-center text-xs'>Change language:</h6>
       </div>

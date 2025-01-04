@@ -47,7 +47,7 @@ export const Episodes = () => {
         <div className="flex overflow-x-auto p-4 gap-3 space-x-4 custom-scrollbar">
           {projects.map((project, index) => (
             <div key={index} className="flex-shrink-0 w-64">
-              <a href={project.linkYoutube} target="_blank" rel="noreferrer" className="no-underline text-white">
+              <a href={project.linkYoutube} target="_blank" rel="noreferrer" className="no-underline text-black">
                 <img src={project.image} alt={project.title} className="rounded-lg" />
                 <h2 className="text-lg font-bold hover:underline">{project.title}</h2>
                 <p>{project.description}</p>

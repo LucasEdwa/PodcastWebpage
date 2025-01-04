@@ -5,7 +5,7 @@ export default function Spotify() {
 
   return (
     <div className="bg-custom-gradient transition-500 px-6 flex flex-col lg:w-2/3 lg:items-center gap-5">
-      <span className="text-2xl italic mt-2 text-white">{t('spotify_title')}</span>
+      <span className="text-2xl italic mt-2 text-black text-center">{t('spotify_title')}</span>
       <iframe
         style={{ borderRadius: '12px' }}
         src="https://open.spotify.com/embed/show/1vd73GdOIUlb5e8HOWSO08?utm_source=generator"

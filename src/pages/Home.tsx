@@ -32,10 +32,8 @@ const MotionDiv = ({ children }: { children: ReactNode }) => {
 
 export default function Home() {
     return (
-        <div className="bg-gradient-to-r from-[#6A329F] via-[#9F6BB3] to-[#d9c5e6]  transition duration-500  w-full scroll-smooth">
-            <MotionDiv>
-                <Hero />
-            </MotionDiv>
+        <div className="bg-custom-gradient   w-full scroll-smooth ">
+            <Hero />
 
             <Episodes />
 

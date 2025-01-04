@@ -5,7 +5,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-custom-gradient transition-500 bottom-0 w-full text-white">
+    <footer className="bg-custom-gradient transition-500 bottom-0 w-full text-black">
       <div className="p-1 text-center">
         <h1 className="text-4xl font-bold">{t('footer_title')}</h1>
         <p className="text-xl mt-4">{t('footer_description')}</p>

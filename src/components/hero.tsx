@@ -6,7 +6,7 @@ export default function Hero() {
 
     return (
         <>
-            <div className="text-white w-full h-[100vh]">
+            <div className="text-black w-full h-[100vh]">
                 <div className="relative flex justify-center gap-3 w-full">
                     <div className="absolute w-[18rem] h-[22rem] rounded-full border-3 border-yellow-500 animate-spin-slow"></div>
                     <div className="absolute w-[18rem] h-[22rem] rounded-full border-3 border-red-600/40 animate-spin-reverse"></div>

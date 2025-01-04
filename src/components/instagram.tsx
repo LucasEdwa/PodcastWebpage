@@ -6,7 +6,7 @@ export const Instagram = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-custom-gradient transition-500 w-full   text-white flex flex-cols items-center">
+    <div className="bg-custom-gradient transition-500 w-full   text-black flex flex-cols items-center">
       <div className="container mx-auto p-12 text-center">
         <h1 className="text-2xl font-bold text-left" dangerouslySetInnerHTML={{ __html: t('instagram_title') }}></h1>
         <p className="text-md mt-4">{t('instagram_description')}</p>

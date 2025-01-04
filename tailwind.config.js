@@ -1,3 +1,4 @@
+// tailwind.config.js
 export default {
   content: [
     './index.html',
@@ -6,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(to right, #6A329F, #9F6BB3, #bb9acf)',
+        'custom-gradient': 'linear-gradient(to right, #F5F5DC, #D3D3D3, #F5F5DC)', // Dark blue, medium blue, and light blue
       },
       transitionDuration: {
         '500': '500ms',
@@ -14,9 +15,7 @@ export default {
       animation: {
         'spin-slow': 'spin 10s linear infinite',
         'spin-reverse': 'spin-reverse 15s linear infinite',
-        'spin-fast': 'spin 5s linear infinite',
         'spin-scale': 'spin-scale 12s linear infinite',
-
       },
       keyframes: {
         spin: {
@@ -26,6 +25,10 @@ export default {
         'spin-reverse': {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(-360deg)' },
+        },
+        'spin-scale': {
+          '0%, 100%': { transform: 'rotate(0deg) scale(1)' },
+          '50%': { transform: 'rotate(180deg) scale(1.2)' },
         },
       },
     },

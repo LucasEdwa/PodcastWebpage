@@ -1,4 +1,4 @@
-// src/i18n.js
+// src/i18n.ts
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import HttpApi from 'i18next-http-backend';
@@ -10,7 +10,7 @@ i18n
   .use(initReactI18next)
   .init({
     supportedLngs: ['en', 'es', 'sv', 'pt'],
-    fallbackLng: 'pt',
+    fallbackLng: 'sv',
     detection: {
       order: ['cookie', 'localStorage', 'path', 'subdomain'],
       caches: ['cookie'],
@@ -20,7 +20,7 @@ i18n
     },
   });
 
-// Force language to Portuguese for testing
-i18n.changeLanguage('pt');
+// Comment out or remove this line to use the default language
+// i18n.changeLanguage('pt');
 
 export default i18n;
